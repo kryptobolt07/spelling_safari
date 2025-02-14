@@ -112,4 +112,6 @@ app.post('/analyze-mistakes', async (req, res) => {
       res.status(500).json({ error: error.message });
     }
   });
-  
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
+});
